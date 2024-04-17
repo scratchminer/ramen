@@ -6,7 +6,7 @@ pub mod win32;
 pub(crate) use win32 as imp;
 
 #[cfg_attr(feature = "nightly-rustdoc", doc(cfg(target_os = "linux")))]
-#[cfg_attr(not(feature = "nightly-rustdoc"), cfg(target_os = "linux"))]
+#[cfg_attr(not(feature = "nightly-rustdoc"), cfg(target_os = "macos"))]
 pub mod linux;
 
 #[cfg(target_os = "macos")]
